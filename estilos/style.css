@@ -25,14 +25,13 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 510px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
-
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -53,4 +52,70 @@ main{
 }
 #form > p{
     font-size: 0.8em;
+}
+
+#sub{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #6A8572;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: #27352b;
+}
+.campo > label{
+    display: none;
+}
+.campo{
+    background-color: #77d493;
+    border: 2px solid #77d493;
+    height: 40px;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: #334137;
+    border: 1px solid #6A8572;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.botao > i{
+    font-size: 0.8em;
+}
+.botao:hover{
+    background-color: #92d1a5;
+}
+.campo > span{
+    color: white; 
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+.campo > input{
+    background-color: #92d1a5;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-12px);
+}
+.campo > input:focus-within{
+    background-color: white;
+    border: none;
 }
